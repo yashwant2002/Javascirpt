@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-10 space-y-2">
+    <h1 class="text-3xl font-bold underline">Guess Number</h1>
+    <p>I have picked a number between 1 and 100. Can you guess it?</p>
+    <input id="number" placeholder="Enter the number" class=" px-2 py-1 border w-[15rem]" type="number" max="100" min="1" />
+    <button onclick="checkGuess()" class="px-3 rounded py-1 bg-gray-400">Submit</button>
+    <p id="feedback"></p>
+    <h2 class="font-bold">Attempt : <span id="attempt">0</span></h2>
+    <script src="./script.js"></script>
+</body>
+</html>

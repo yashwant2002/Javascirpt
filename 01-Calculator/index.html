@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="main">
-        <div class="overlay">yashawnat</div>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-10 space-y-3">
+    <h1 class="text-3xl font-bold underline">Simple Calculator</h1>
+    <div class=" space-x-3">
+      <input id="num1" class="border w-[15rem]" placeholder="Enter Your First Number" type="number" />
+      <input id="num2" class="border w-[15rem]" placeholder="Enter Your Second Number" type="number" />
     </div>
-    <script src="./js/script.js"></script>
-</body>
+    <div class="space-x-3">
+      <button onclick="add()" class="px-3 py-2 bg-gray-900 text-white rounded">+</button>
+      <button onclick="subtract()" class="px-3 py-2 bg-gray-900 text-white rounded">-</button>
+      <button onclick="multiply()" class="px-3 py-2 bg-gray-900 text-white rounded">*</button>
+      <button onclick="divide()" class="px-3 py-2 bg-gray-900 text-white rounded">/</button>
+    </div>
+    <div>
+        <h2 class="font-bold">Result : <span id="result">0</span></h2>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
 </html>

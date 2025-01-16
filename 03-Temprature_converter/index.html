@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-10 space-y-3">
+    <h1 class="text-3xl font-bold underline">Temperature Converter</h1>
+    <input class="border" type="number" id="temp" placeholder="Enter Temperature" />
+    <select id="Converter">
+      <option value="CtoF">Celsius to Fahrenheit</option>
+      <option value="FtoC">Fahrenheit to Celsius</option>
+      <option value="CtoK">Celsius to Kelvin</option>
+      <option value="KtoC">Kelvin to Celsius</option>
+    </select>
+    <button onclick="convertTemperature()" class="px-3 rounded py-1 bg-gray-400">Convert</button>
+    <h2  class="font-bold">Result: <span id="result"></span></h2>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .task {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body class="m-10 space-y-2">
+  <h1 class="text-3xl font-bold underline">To-do List</h1>
+  <div>
+    <input type="text" class="taskInput border w-[20rem]" placeholder="Enter the Task" /> 
+    <button class="taskButton px-3 rounded py-1 bg-gray-400">Add</button>
+  </div>
+  <h3 class="font-bold text-xl">Task :- </h3>
+  <div class="taskList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

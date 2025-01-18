@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+    input {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #28a745;
+      color: #fff;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .edit {
+      background-color: #ffc107;
+    }
+    .delete {
+      background-color: #dc3545;
+    }
+    .edit:hover {
+      background-color: #e0a800;
+    }
+    .delete:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Grocery List Manager</h1>
+    <input type="text" id="itemInput" placeholder="Enter an item">
+    <button id="addButton">Add Item</button>
+    <ul id="groceryList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyPress Visualizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #keyDisplay {
+      font-size: 3rem;
+      color: #333;
+      margin: 20px 0;
+    }
+    #keyCodeDisplay {
+      font-size: 1.5rem;
+      color: #555;
+    }
+    .info {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>KeyPress Visualizer</h1>
+  <p id="keyDisplay">Press any key...</p>
+  <p id="keyCodeDisplay"></p>
+  <div class="info">
+    <p>Key: Displays the character of the key pressed.</p>
+    <p>KeyCode: Displays the numeric key code for the key.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

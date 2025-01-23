@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .note-container {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .note {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .note button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
+    <h1>Notes App</h1>
+    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <button id="addNote">Add Note</button>
+    <div class="note-container" id="notesContainer"></div>
     <script src="script.js"></script>
 </body>
 </html>

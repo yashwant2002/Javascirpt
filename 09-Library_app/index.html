@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form {
+            margin-bottom: 20px;
+        }
+        .form input, .form button {
+            padding: 10px;
+            font-size: 1rem;
+            margin: 5px;
+        }
+        .book-list {
+            margin-top: 20px;
+        }
+        .book {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .book button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
     <h1>Library App</h1>
+    <div class="form">
+        <input type="text" id="title" placeholder="Book Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <button id="addBook">Add Book</button>
+    </div>
+    <div class="book-list" id="bookList"></div>
     <script src="script.js"></script>
 </body>
 </html>
